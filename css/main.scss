@@ -1,0 +1,265 @@
+/*  ÜLDINE  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #dcd6ce;
+  color: #333;
+  line-height: 1.7;
+}
+
+/*  NAVBAR  */
+#navbar {
+  background: #f8f4e3;
+  padding: 15px 0;
+
+  .nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 50px;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #333;
+        transition: 0.2s;
+
+        &:hover {
+          color: #842a7a;
+        }
+      }
+    }
+  }
+}
+
+/*  HERO  */
+#hero img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+/*  HOBI SEKTSIOON */
+.hobi-section {
+  padding: 80px 20px;
+}
+
+.minu-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .textbox {
+    background: linear-gradient(white, #ece8e1);
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+
+/*  KM GRID */
+.km-section {
+  padding: 40px 20px;
+}
+
+.km-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.km-box {
+  background: #3f3f41;
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 48px;
+  padding: 80px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: #622d5e;
+    color: #fff;
+  }
+}
+
+/* MODAL GALERII */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &:target {
+    display: flex;
+  }
+
+  .gallery-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .close {
+      display: block;
+      font-size: 32px;
+      text-decoration: none;
+      color: #000;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* BOOKS */
+.books-section {
+  background: #7f807c;
+  padding: 60px 0;
+}
+
+.books-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+.books-section {
+  background: #f5f5f5;
+  padding: 60px 20px;
+
+  .books-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+
+    .book-card {
+      background: white;
+      border-radius: 6px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+
+      h3 {
+        margin: 15px 0 10px;
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #842a7a;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+
+        &:hover {
+          background: #622d5e;
+        }
+      }
+    }
+  }
+}
+
+/*  VORM */
+.vormi-taust {
+  background: linear-gradient(#6f6f6f, #3e3e3e);
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 42px;
+  }
+}
+
+.jooksu-vorm {
+  max-width: 480px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  input,
+  select {
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+  }
+
+  .cta {
+    background: #d84b64;
+    border: none;
+    padding: 18px;
+    color: white;
+    font-size: 24px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+}
+
+/*  FOOTER  */
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  background: #222;
+  color: #fff;
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobileht</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="nav-container">
+          <ul>
+            <li><a class="current" href="index.html">Minu Hobi</a></li>
+            <li><a href="galery.html">Jooksu galerii</a></li>
+            <li><a href="books.html">Raamatu soovitused</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="hero">
+        <div class="container">
+          <img src="img/long-forest-path.jpg" class="hero-img" alt="Loodus" />
+        </div>
+      </div>
+    </header>
+
+    <!--MAIN -->
+    <main>
+      <section class="hobi-section">
+        <div class="minu-container">
+          <img src="img/jou.jpeg" alt="Jooks" />
+
+          <div class="textbox">
+            <h2>Minu Hobi</h2>
+            <p>
+              Jooksmisega alustasin ma aastal 2010. Esimene võistlus oli Mai
+              jooks (7 km). Sealt sain ma selle pisiku ja olen jooksnud sellest
+              ajast alates. Jooksmine on hea nii vaimsele kui füüsilisele
+              tervisele.
+            </p>
+          </div>
+
+          <img src="img/maraton.jpeg" alt="Maraton" />
+        </div>
+      </section>
+
+      <!-- KM GRID -->
+      <section class="km-section">
+        <div class="km-grid">
+          <a href="#g10" class="km-box">10<br />KM</a>
+          <a href="#g21" class="km-box">21,1<br />KM</a>
+          <a href="#g42" class="km-box">42,2<br />KM</a>
+        </div>
+
+        <div id="g10" class="gallery-modal">
+          <div class="gallery-content">
+            <a href="#" class="close">×</a>
+            <img src="img/jou.jpeg" alt="" />
+          </div>
+        </div>
+
+        <div id="g21" class="gallery-modal">
+          <div class="gallery-content">
+            <a href="#" class="close">×</a>
+            <img src="img/maraton.jpeg" alt="" />
+          </div>
+        </div>
+
+        <div id="g42" class="gallery-modal">
+          <div class="gallery-content">
+            <a href="#" class="close">×</a>
+            <img src="img/maraton.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- RAAMATUD -->
+      <section class="books-section">
+        <div class="books-container">
+          <img src="img/epic-runs-of-the-world.jpg.webp" alt="Raamat 1" />
+          <img src="img/JOOKSJANA SÜNDINUD.jpeg" alt="Raamat 2" />
+          <img src="img/MURAKAMI.webp" alt="Raamat 3" />
+          <img src="img/KÄSIRAAMAT.jpeg" alt="Raamat 4" />
+          <img src="img/Unknown.jpeg" alt="Raamat 5" />
+        </div>
+      </section>
+
+      <!-- VORM -->
+      <section class="vormi-taust">
+        <h2>Jooksu kalender</h2>
+
+        <form class="jooksu-vorm">
+          <input type="text" placeholder="Nimi" required />
+          <input type="email" placeholder="E-mail" required />
+
+          <select class="styled-select" required>
+            <option value="">Vali jooks</option>
+            <option>Tartu jooksumaraton</option>
+            <option>Tallinna maraton</option>
+            <option>SEB Maijooks</option>
+            <option>Ööjooks</option>
+            <option>Narva Energiajooks</option>
+          </select>
+
+          <button type="submit" class="cta">Tule jooksma</button>
+        </form>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="kontakt">
+        <h3>Kontakt</h3>
+        <p>📞 +372 5550 5797</p>
+        <p>✉️ birgit.sinisalu@voco.ee</p>
+        <p>📍 Harjumaa, Laagri</p>
+      </div>
+    </footer>
+  </body>
+</html>

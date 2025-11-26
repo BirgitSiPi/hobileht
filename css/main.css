@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/*  ÜLDINE  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #dcd6ce;
+  color: #333;
+  line-height: 1.7;
+}
+
+/*  NAVBAR  */
+#navbar {
+  background: #f8f4e3;
+  padding: 15px 0;
+}
+#navbar .nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#navbar .nav-container ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+#navbar .nav-container ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #333;
+  transition: 0.2s;
+}
+#navbar .nav-container ul a:hover {
+  color: #842a7a;
+}
+
+/*  HERO  */
+#hero img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+/*  HOBI SEKTSIOON */
+.hobi-section {
+  padding: 80px 20px;
+}
+
+.minu-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+.minu-container img {
+  width: 100%;
+  border-radius: 6px;
+}
+.minu-container .textbox {
+  background: linear-gradient(white, #ece8e1);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/*  KM GRID */
+.km-section {
+  padding: 40px 20px;
+}
+
+.km-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.km-box {
+  background: #3f3f41;
+  color: #c7c7c7;
+  text-align: center;
+  font-size: 48px;
+  padding: 80px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.km-box:hover {
+  background: #622d5e;
+  color: #fff;
+}
+
+/* MODAL GALERII */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-modal:target {
+  display: flex;
+}
+.gallery-modal .gallery-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.gallery-modal .gallery-content img {
+  width: 100%;
+  border-radius: 6px;
+}
+.gallery-modal .gallery-content .close {
+  display: block;
+  font-size: 32px;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* BOOKS */
+.books-section {
+  background: #7f807c;
+  padding: 60px 0;
+}
+
+.books-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.books-container img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.books-container img:hover {
+  transform: scale(1.05);
+}
+
+.books-section {
+  background: #f5f5f5;
+  padding: 60px 20px;
+}
+.books-section .books-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.books-section .books-container .book-card {
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.books-section .books-container .book-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.books-section .books-container .book-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+}
+.books-section .books-container .book-card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.books-section .books-container .book-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #842a7a;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.books-section .books-container .book-card a:hover {
+  background: #622d5e;
+}
+
+/*  VORM */
+.vormi-taust {
+  background: linear-gradient(#6f6f6f, #3e3e3e);
+  padding: 60px 20px;
+  text-align: center;
+}
+.vormi-taust h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 42px;
+}
+
+.jooksu-vorm {
+  max-width: 480px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.jooksu-vorm input,
+.jooksu-vorm select {
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: none;
+  font-size: 20px;
+}
+.jooksu-vorm .cta {
+  background: #d84b64;
+  border: none;
+  padding: 18px;
+  color: white;
+  font-size: 24px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/*  FOOTER  */
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  background: #222;
+  color: #fff;
+}
+footer h3 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+/*# sourceMappingURL=main.css.map */
